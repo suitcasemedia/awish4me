@@ -1,0 +1,19 @@
+.wish-drawing-card > div > div > div > div:nth-child(1) > div{
+    padding-right:8px !important;
+    text-align: left;
+    
+   
+}
+//tweet text
+.wish-drawing-card  > div > div > div > div:nth-child(1) > div > span:nth-child(1){
+    color: $grey4!important;
+}
+// favaourites -retweets
+.wish-drawing-card  > div > div > div > div:nth-child(1) > div > span:nth-child(2){
+    color: $grey6 !important;
+}
+
+ 
+ .wish-drawing-card > div > div > div > div > div > button > div  svg > g > path {
+    color: $grey8;
+}
