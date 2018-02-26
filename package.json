@@ -1,0 +1,21 @@
+{
+  "name": "awish4me",
+  "version": "0.0.1",
+  "description": "wish genie",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "concurrently 'cd backend && nodemon index.js' 'cd frontend && yarn start' ",
+     "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../",
+     "frontendBuildDeploy" : "cd frontend && yarn  build && yarn global add serve && serve -s build"
+  } ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suitcasemedia/awish4me.git"
+  },
+  "author": "jimmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suitcasemedia/awish4me/issues"
+  },
+  "homepage": "https://github.com/suitcasemedia/awish4me#readme"
+}
