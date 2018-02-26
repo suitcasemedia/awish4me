@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
      "start": "concurrently 'cd backend && nodemon index.js' 'cd frontend && yarn start' ",
      "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../",
-     "frontendBuildDeploy" : "cd frontend && yarn  build && yarn global add serve && serve -s build"
+     "frontendBuildDeploy" : "cd frontend && yarn run  build && yarn global add serve && serve -s build"
   } ,
   "repository": {
     "type": "git",
