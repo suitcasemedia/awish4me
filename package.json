@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/suitcasemedia/awish4me/issues"
   },
-  "homepage": "https://github.com/suitcasemedia/awish4me#readme"
+  "homepage": "https://github.com/suitcasemedia/awish4me#readme",
+  "dependencies": {
+    "concurrently": "^3.5.0",
+   
+  }
+
 }
