@@ -1,7 +1,10 @@
+// were in post-deploy : yarn run installAll && yarn start &&
 module.exports = {
+
+
     apps: [{
         "script": "yarn",
-        "args" : "installAll"
+        "args" : "start"
     }],
     deploy: {
       production: {
@@ -11,7 +14,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/ubuntu/awish4me',
-        'post-deploy': 'yarn run installAll && yarn start && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': ' pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
