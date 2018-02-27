@@ -17,6 +17,6 @@ module.exports = {
         path: '/home/ubuntu/awish4me',
         'post-deploy': 'npm run installAll &&  startOrRestart ecosystem.config.js'
       }
-    }
+
   }
  
