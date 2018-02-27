@@ -1,5 +1,5 @@
 require('dotenv').config();
-console.log("process.env",process.env)
+
 const {
   TWITTER_CONSUMER_KEY,
   TWITTER_CONSUMER_SECRET,
@@ -24,7 +24,7 @@ exports.wishesDrawn = (req, res) =>{
     
     if (!error) {
       res.json(tweets.map(tweet =>{
-        console.log(tweet.entities)
+     //   console.log(tweet.entities)
        
 
          return {
