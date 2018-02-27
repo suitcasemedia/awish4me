@@ -3,8 +3,9 @@ module.exports = {
 
 
     apps: [{
-        "script": "awish4me",
-        "args" : "./server.js"
+        "name": "recipes",
+        "script": "yarn",
+        "args" : "start"
     }],
     deploy: {
       production: {
@@ -14,7 +15,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/ubuntu/awish4me',
-        'post-deploy': 'yarn installAll && yarn start && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'yarn installAll  && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
