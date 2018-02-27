@@ -4,8 +4,8 @@
   "description": "wish genie",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently   'node server.js' 'cd backend && yarn run start'",
-    "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install   && yarn run  build && cd ../"
+    "start": "concurrently   'node server.js' 'cd ./backend && yarn start'",
+    "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install   && yarn run  build"
   },
   "repository": {
     "type": "git",
