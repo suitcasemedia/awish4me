@@ -4,10 +4,9 @@
   "description": "wish genie",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "concurrently 'cd backend && yarn start' 'cd frontend && yarn run  build && yarn global add serve && serve -s build' ",
-     "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../"
-    
-  } ,
+    "start": "concurrently 'cd backend && yarn start' 'cd frontend && yarn run  build' ",
+    "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suitcasemedia/awish4me.git"
@@ -19,8 +18,7 @@
   },
   "homepage": "https://github.com/suitcasemedia/awish4me#readme",
   "dependencies": {
-    "concurrently": "^3.5.0"
-   
+    "concurrently": "^3.5.0",
+    "express": "^4.16.2"
   }
-
 }
