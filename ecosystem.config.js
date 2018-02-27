@@ -4,7 +4,7 @@ module.exports = {
 
     apps: [{
         "name": "awish4me",
-        "script": "yarn",
+        "script": "npm",
         "args" : "start"
     }],
     deploy: {
@@ -15,7 +15,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/ubuntu/awish4me',
-        'post-deploy': 'yarn run installAll  && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'npm run installAll  && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
