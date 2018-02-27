@@ -4,7 +4,7 @@ module.exports = {
 
     apps: [{
         "name": "awish4me",
-        "script": "npm",
+        "script": "yarn",
         "args" : "start"
     }],
     deploy: {
