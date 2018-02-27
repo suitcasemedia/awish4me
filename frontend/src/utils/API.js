@@ -1,4 +1,5 @@
-const api = "localhost:3005"
+// const api = "http://localhost:3005"
+const api = "http://ec2-34-210-87-178.us-west-2.compute.amazonaws.com/"
 
 
 
