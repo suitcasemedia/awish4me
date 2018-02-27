@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "installAll": "npm install &&  cd ./backend &&  npm install && cd ../frontend && npm install",
-    "backend": "cd backend && npm start",
-    "server": "nodemon server.js",
-    "start": "concurrently --kill-others-on-fail \"npm server\" \"npm backend\"",
+    "backend": "cd backend && pm2 start app.js",
+    "server": "pm2 start server.js",
+    "start": "concurrently --kill-others-on-fail \"pm2 server\" \"npm backend\"",
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
     "server-start" : "pm2 deploy ecosystem.config.js  production exec pm2 start"
