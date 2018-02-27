@@ -4,7 +4,7 @@
   "description": "wish genie",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installAll": "npm install &&  cd ./backend &&  npm install && cd ../frontend && npm install   && npm run  build",
+    "installAll": "npm install &&  cd ./backend &&  npm install && cd ../frontend && npm install",
     "backend": "cd backend && yarn start",
     "server": "nodemon server.js",
     "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn backend\""
