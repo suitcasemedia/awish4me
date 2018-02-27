@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         "script": "yarn",
-        "args" : "start"
+        "args" : "installAll"
     }],
     deploy: {
       production: {
