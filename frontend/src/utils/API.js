@@ -1,4 +1,4 @@
-const api = "http://localhost:3005"
+const api = "localhost:3005"
 
 
 
