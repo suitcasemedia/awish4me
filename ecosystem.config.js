@@ -15,7 +15,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/ubuntu/awish4me',
-        'post-deploy': ' pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
