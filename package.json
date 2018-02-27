@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "installAll": "npm install &&  cd ./backend &&  npm install && cd ../frontend && npm install",
-    "backend": "cd backend && yarn start",
+    "backend": "cd backend && npm start",
     "server": "nodemon server.js",
-    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn backend\""
+    "start": "concurrently --kill-others-on-fail \"npm server\" \"npm backend\""
   },
   "repository": {
     "type": "git",
