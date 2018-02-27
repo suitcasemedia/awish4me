@@ -11,7 +11,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/ubuntu/awish4me',
-        'post-deploy': 'yarn run installAll && yarn start && yarn run frontendBuildDeploy && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'yarn run installAll && yarn start && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }

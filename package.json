@@ -4,9 +4,9 @@
   "description": "wish genie",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "cd ./backend && nodemon index.js",
-     "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../",
-     "frontendBuildDeploy" : "cd frontend && yarn run  build && yarn global add serve && serve -s build"
+     "start": "concurrently 'cd backend && nodemon index.js' 'cd frontend && yarn run  build && yarn global add serve && serve -s build' ",
+     "installAll": "yarn install &&  cd ./backend &&  yarn install && cd ../frontend && yarn install  && cd ../"
+    
   } ,
   "repository": {
     "type": "git",
