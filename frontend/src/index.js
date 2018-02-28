@@ -45,7 +45,7 @@ ReactDOM.render(
           />
           <div className="o-layout">
             <div className="o-layout__item u-1/1">
-              <h1 className="genie-text u-margin-top-large u-margin-bottom-none">Greetings. I am the drawing genie.</h1>
+              <h1 className="genie-text u-margin-top-large u-margin-bottom-none">Greetings... I am the drawing genie.</h1>
               <img  className=" u-1/1 u-1/2@desktop o-crop-16by9" src="https://pbs.twimg.com/profile_banners/2499741942/1408307741"/>  
             </div>
           </div>
