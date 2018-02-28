@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 
 
 var app = express();
+app.use( express.static( `${__dirname}/../frontend/build` ) );
+
+
 app.use(function(req, res, next) {
  
   res.header("Access-Control-Allow-Origin", "*");

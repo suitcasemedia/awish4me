@@ -9,13 +9,13 @@ module.exports = {
     }],
     deploy: {
       production: {
-        user: 'ubuntu',
-        host: 'ec2-34-210-87-178.us-west-2.compute.amazonaws.com',
-        key: '~/.ssh/awish4me.pem',
+        user: 'jimmy',
+        host: 'awish4.me',
+        key: '~/.ssh/known_hosts',
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
-        path: '/home/ubuntu/awish4me',
-        'post-deploy': 'npm run installAll && pm2  startOrRestart ecosystem.config.js'
+        path: '/home/jimmy/awish4me',
+        'post-deploy': 'yarn installAll && pm2  startOrRestart ecosystem.config.js'
       }
     }
   }
