@@ -1,10 +1,10 @@
-// were in post-deploy : npm run installAll && npm start &&
+// were in post-deploy : yarn run installAll && yarn start &&
 module.exports = {
 
 
     apps: [{
         "name": "awish4me",
-        "script": "npm",
+        "script": "yarn",
         "args" : "start"
     }],
     deploy: {
@@ -15,7 +15,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:suitcasemedia/awish4me.git',
         path: '/home/jimmy/awish4me',
-        'post-deploy': 'cd ./backend && npm install && cd ../frontend && npm install && cd ../ && pm2  startOrRestart ecosystem.config.js'
+        'post-deploy': 'yarn installAll && yarn reactProdBuild && pm2  startOrRestart ecosystem.config.js'
       }
     }
   }

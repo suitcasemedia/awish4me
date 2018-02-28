@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,7 +9,12 @@ var bodyParser = require('body-parser');
 
 
 var app = express();
-app.use( express.static( `${__dirname}/../frontend/build` ) );
+const {NODE_ENV} = process.env;
+
+if( NODE_ENV === 'production'){
+  app.use( express.static( `${__dirname}/../frontend/build` ) );
+
+}
 
 
 app.use(function(req, res, next) {
