@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "installAll": "cd ./backend && yarn install && cd ../frontend && yarn install",
     "start": "cd backend && yarn start",
-    "reactProdBuild": "yarn run build  && cd ../",
+    "reactProdBuild": "cd ./frontend && yarn run build  && cd ../",
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production"
    
