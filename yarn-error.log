@@ -1,5 +1,5 @@
 Arguments: 
-  /home/jimmyhp/.nvm/versions/node/v8.9.4/bin/node /usr/share/yarn/bin/yarn.js start
+  /home/jimmyhp/.nvm/versions/node/v8.9.4/bin/node /usr/share/yarn/bin/yarn.js deploy
 
 PATH: 
   /home/jimmyhp/.rbenv/plugins/ruby-build/bin:/home/jimmyhp/.rbenv/shims:/home/jimmyhp/.rbenv/bin:/home/jimmyhp/.nvm/versions/node/v8.9.4/bin:/home/jimmyhp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/jimmyhp/Android/Sdk/tools:/home/jimmyhp/Android/Sdk/platform-tools
@@ -20,28 +20,24 @@ npm manifest:
     "description": "wish genie",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "installAll": "npm install &&  cd ./backend &&  npm install && cd ../frontend && npm install",
-      "backend": "cd backend && yarn start",
-      "server": "yarn start server.js",
-      "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn backend\"",
+      "installAll": "cd ./backend && yarn install && cd ../frontend && yarn install",
+      "start": "cd backend && yarn start",
+      "reactProdBuild": "yarn run build  && cd ../",
       "restart": "pm2 startOrRestart ecosystem.config.js",
       "deploy": "pm2 deploy ecosystem.config.js production"
      
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/suitcasemedia/awish4me.git"
+      "url": "https://github.com/suitcasemedia/awish4me.git"
     },
     "author": "jimmy",
     "license": "ISC",
     "bugs": {
       "url": "https://github.com/suitcasemedia/awish4me/issues"
     },
-    "homepage": "https://github.com/suitcasemedia/awish4me#readme",
-    "dependencies": {
-      "concurrently": "^3.5.0",
-      "express": "^4.16.2"
-    }
+    "homepage": "https://github.com/suitcasemedia/awish4me#readme"
+    
   }
 
 yarn manifest: 
@@ -435,7 +431,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c concurrently --kill-others-on-fail "yarn server" "yarn backend"
+  Arguments: -c pm2 deploy ecosystem.config.js production
   Directory: /home/jimmyhp/code/awish4me
   Output:
   
