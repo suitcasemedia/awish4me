@@ -11,7 +11,8 @@ const headers = {
 
 export const fetchWishes = () =>
   fetch(`${api}`, { headers })
-    .then(res => res.json().catch(res => res.error.json()) )
+    .then(res => res.json())
+     // .catch(res => res.error.json()) )
     
     //
     
