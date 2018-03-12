@@ -106,7 +106,7 @@ class WishesList extends Component {
     }
 
     return (
-      <div className="o-wrapper u-margin-left">
+      <div className="o-wrapper">
         <div className="o-layout o-layout--center"  >
           <div className="u-margin-bottom-small"> <Subheader>{wishes.wishes.length} wishes granted so far</Subheader></div>
           <ul className="o-layout">
