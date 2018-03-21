@@ -1,5 +1,5 @@
 Arguments: 
-  /home/jimmyhp/.nvm/versions/node/v8.9.4/bin/node /usr/share/yarn/bin/yarn.js deploy
+  /home/jimmyhp/.nvm/versions/node/v8.9.4/bin/node /usr/share/yarn/bin/yarn.js run deploy
 
 PATH: 
   /home/jimmyhp/.rbenv/plugins/ruby-build/bin:/home/jimmyhp/.rbenv/shims:/home/jimmyhp/.rbenv/bin:/home/jimmyhp/.nvm/versions/node/v8.9.4/bin:/home/jimmyhp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/jimmyhp/Android/Sdk/tools:/home/jimmyhp/Android/Sdk/platform-tools
@@ -22,7 +22,7 @@ npm manifest:
       "test": "echo \"Error: no test specified\" && exit 1",
       "installAll": "cd ./backend && yarn install && cd ../frontend && yarn install",
       "start": "cd backend && yarn start",
-      "reactProdBuild": "yarn run build  && cd ../",
+      "reactProdBuild": "cd ./frontend && yarn run build  && cd ../",
       "restart": "pm2 startOrRestart ecosystem.config.js",
       "deploy": "pm2 deploy ecosystem.config.js production"
      
